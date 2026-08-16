@@ -34,21 +34,31 @@ export function Navbar() {
           <span className="hidden sm:inline">SHUBHAM MALI</span>
         </button>
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          data-cursor={open ? 'CLOSE' : 'MENU'}
-          className="group flex items-center gap-3 font-display text-xs uppercase tracking-[0.25em] text-bone"
-        >
-          <span>{open ? 'Close' : 'Menu'}</span>
-          <span className="relative flex h-8 w-8 flex-col items-center justify-center gap-[5px]">
-            <span
-              className={`h-px w-5 bg-bone transition-transform duration-300 ${open ? 'translate-y-[3px] rotate-45' : ''}`}
-            />
-            <span
-              className={`h-px w-5 bg-bone transition-transform duration-300 ${open ? '-translate-y-[3px] -rotate-45' : ''}`}
-            />
-          </span>
-        </button>
+        <div className="flex items-center gap-6">
+          <a
+            href="/resume"
+            data-cursor="VIEW"
+            className="hidden font-display text-xs uppercase tracking-[0.25em] text-mist transition-colors duration-300 hover:text-bone sm:inline"
+          >
+            Resume
+          </a>
+
+          <button
+            onClick={() => setOpen((v) => !v)}
+            data-cursor={open ? 'CLOSE' : 'MENU'}
+            className="group flex items-center gap-3 font-display text-xs uppercase tracking-[0.25em] text-bone"
+          >
+            <span>{open ? 'Close' : 'Menu'}</span>
+            <span className="relative flex h-8 w-8 flex-col items-center justify-center gap-[5px]">
+              <span
+                className={`h-px w-5 bg-bone transition-transform duration-300 ${open ? 'translate-y-[3px] rotate-45' : ''}`}
+              />
+              <span
+                className={`h-px w-5 bg-bone transition-transform duration-300 ${open ? '-translate-y-[3px] -rotate-45' : ''}`}
+              />
+            </span>
+          </button>
+        </div>
       </header>
 
       <AnimatePresence>
@@ -89,6 +99,13 @@ export function Navbar() {
               </nav>
 
               <div className="flex flex-wrap gap-x-6 gap-y-3">
+                <a
+                  href="/resume"
+                  data-cursor="VIEW"
+                  className="font-body text-[11px] uppercase tracking-[0.2em] text-accent transition-colors hover:text-bone sm:hidden"
+                >
+                  Resume
+                </a>
                 {socials.map((s) => (
                   <a
                     key={s.key}

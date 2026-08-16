@@ -35,7 +35,18 @@
       "Bash(pdftohtml -h)",
       "Bash(pdftohtml -xml -i /home/shubham/Personal/Shubham_Mali_Software_Engineer.pdf /tmp/claude-1000/-home-shubham-Personal-portfolio-simple-portfolio/362ab436-c6f9-49f9-ad03-6abf5e8eb00a/scratchpad/resume/resume.xml)",
       "Bash(pdftohtml -c -noframes /home/shubham/Personal/Shubham_Mali_Software_Engineer.pdf /tmp/claude-1000/-home-shubham-Personal-portfolio-simple-portfolio/362ab436-c6f9-49f9-ad03-6abf5e8eb00a/scratchpad/resume/resume.html)",
-      "Bash(pkill -9 -f \"vite --port 5184\")"
+      "Bash(pkill -9 -f \"vite --port 5184\")",
+      "Bash(magick /home/shubham/Personal/shubham-mali.png -resize 512x512^ -gravity north -extent 512x512 -strip ./public/favicon-source.png)",
+      "Bash(magick ./public/favicon-source.png -resize 32x32 ./public/favicon-32.png)",
+      "Bash(magick ./public/favicon-source.png -resize 180x180 ./public/apple-touch-icon.png)",
+      "Bash(magick ./public/favicon-source.png -resize 192x192 ./public/favicon-192.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5185/resume)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5185/resume/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5185/)",
+      "Bash(curl -s http://localhost:5185/resume)",
+      "Bash(curl -s http://localhost:5185/)",
+      "Bash(curl -s http://localhost:5185/resume/)",
+      "Bash(pkill -9 -f \"vite --port 5185\")"
     ]
   }
 }

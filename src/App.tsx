@@ -12,13 +12,20 @@ import { Projects } from '@/sections/Projects'
 import { Certifications } from '@/sections/Certifications'
 import { Education } from '@/sections/Education'
 import { Contact } from '@/sections/Contact'
+import { ResumePage } from '@/pages/ResumePage'
 import { useLenis } from '@/hooks/useLenis'
 import { usePrefersReducedMotion } from '@/hooks/useMediaQuery'
+
+const isResumeRoute = window.location.pathname.replace(/\/+$/, '') === '/resume'
 
 function App() {
   const [loaded, setLoaded] = useState(false)
   const reducedMotion = usePrefersReducedMotion()
-  useLenis(loaded && !reducedMotion)
+  useLenis(loaded && !reducedMotion && !isResumeRoute)
+
+  if (isResumeRoute) {
+    return <ResumePage />
+  }
 
   return (
     <>

@@ -78,3 +78,40 @@
 html.has-cursor-fx {
   cursor: none;
 }
+
+.loader-sphere {
+  perspective: 240px;
+}
+
+.loader-sphere-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: loader-spin 1.8s linear infinite;
+}
+
+.loader-ring {
+  position: absolute;
+  inset: 0;
+  display: block;
+  border-radius: 9999px;
+  border: 1px solid var(--color-accent);
+  opacity: 0.6;
+}
+
+.loader-core {
+  inset: 32%;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  opacity: 0.3;
+  filter: blur(3px);
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

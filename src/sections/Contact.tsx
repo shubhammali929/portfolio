@@ -55,18 +55,30 @@ export function Contact() {
           ))}
         </h3>
 
-        <motion.a
-          href={`mailto:${profile.email}`}
-          data-cursor="SEND"
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6, duration: 0.7 }}
-          className="group mt-14 inline-flex items-center gap-3 border border-line px-8 py-4 font-display text-xs uppercase tracking-[0.25em] text-bone transition-colors duration-300 hover:border-accent hover:text-accent"
+          className="mt-14 flex flex-wrap items-center justify-center gap-4"
         >
-          Start a Conversation
-          <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-        </motion.a>
+          <a
+            href={`mailto:${profile.email}`}
+            data-cursor="SEND"
+            className="group inline-flex items-center gap-3 border border-line px-8 py-4 font-display text-xs uppercase tracking-[0.25em] text-bone transition-colors duration-300 hover:border-accent hover:text-accent"
+          >
+            Start a Conversation
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
+          <a
+            href="/resume"
+            data-cursor="VIEW"
+            className="group inline-flex items-center gap-3 px-8 py-4 font-display text-xs uppercase tracking-[0.25em] text-mist transition-colors duration-300 hover:text-bone"
+          >
+            Download Resume
+            <span className="transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   )
