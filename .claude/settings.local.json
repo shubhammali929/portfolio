@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"Mozilla/5.0\" https://shubhamm.info/)",
+      "Bash(curl -s -o /tmp/claude-1000/-home-shubham-portfolio/61f6fe95-7e39-47ca-8318-4ac6480f3e09/scratchpad/page.html -w \"HTTP:%{http_code} SIZE:%{size_download}\\\\n\" -A \"Mozilla/5.0\" https://shubhamm.info/)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(curl -s -A \"Mozilla/5.0\" https://shubhamm.info/assets/index-JI2ZqVtA.js -o bundle.js -w \"SIZE:%{size_download}\\\\n\")",
+      "Bash(grep -oE \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}\" bundle.js)",
+      "Bash(node -e ' *)",
+      "Bash(npm create *)",
+      "Bash(cp *)",
+      "Bash(npm install *)",
+      "Bash(npm uninstall *)",
+      "Bash(rm -f /home/shubham/portfolio/public/icons.svg)",
+      "Bash(npx tsc *)",
+      "Bash(nohup npm run dev -- --port 5173 --strictPort)",
+      "Bash(npm run *)",
+      "Bash(pkill -f \"vite preview\")",
+      "Bash(npm ls *)",
+      "Bash(npm view *)",
+      "Bash(node *)",
+      "Bash(chmod +x node_modules/.bin/*.* node_modules/.bin/tsc node_modules/.bin/vite)",
+      "Bash(sh node_modules/.bin/tsc -b)",
+      "Bash(curl -s http://localhost:5183/ -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(pkill -f \"vite --port 5183\")",
+      "Bash(kill -9 1397650)",
+      "Bash(pkill -9 -f \"port 5183\")",
+      "Read(//home/shubham/Personal/**)",
+      "Bash(magick /home/shubham/Personal/shubham-mali.png -resize 800x1200 -strip -quality 85 ./public/images/shubham-mali.jpg)",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(python3 -c \"import PyPDF2; print\\('pypdf2 ok'\\)\")",
+      "Bash(pip3 list *)",
+      "Bash(python3 -)",
+      "Bash(pdftohtml -h)",
+      "Bash(pdftohtml -xml -i /home/shubham/Personal/Shubham_Mali_Software_Engineer.pdf /tmp/claude-1000/-home-shubham-Personal-portfolio-simple-portfolio/362ab436-c6f9-49f9-ad03-6abf5e8eb00a/scratchpad/resume/resume.xml)",
+      "Bash(pdftohtml -c -noframes /home/shubham/Personal/Shubham_Mali_Software_Engineer.pdf /tmp/claude-1000/-home-shubham-Personal-portfolio-simple-portfolio/362ab436-c6f9-49f9-ad03-6abf5e8eb00a/scratchpad/resume/resume.html)",
+      "Bash(pkill -9 -f \"vite --port 5184\")"
+    ]
+  }
+}
