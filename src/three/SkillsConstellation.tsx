@@ -155,7 +155,7 @@ export function SkillsConstellation({
   return (
     <group ref={group}>
       {lines.map((pts, i) => (
-        <Line key={i} points={pts} color="#2a2a2e" lineWidth={1} transparent opacity={0.5} />
+        <Line key={i} points={pts} color="#46464c" lineWidth={1} transparent opacity={0.5} />
       ))}
       {nodes.map((node) => (
         <Node
