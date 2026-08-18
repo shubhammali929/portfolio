@@ -35,8 +35,8 @@ export const focusAreas = [
 
 export const socials = [
   { label: 'GitHub', url: 'https://github.com/shubhammali929', key: 'github' },
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shubhammali1511/', key: 'linkedin' },
-  { label: 'Email', url: 'mailto:shubhammali929@gmail.com', key: 'email' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shubhammalidev/', key: 'linkedin' },
+  { label: 'Email', url: 'mailto:dev.shubham.mali@gmail.com', key: 'email' },
   { label: 'Buy me a coffee', url: 'https://buymeacoffee.com/shubhammali', key: 'coffee' },
 ] as const
 
