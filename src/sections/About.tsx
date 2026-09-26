@@ -13,7 +13,13 @@ export function About() {
           <div className="relative aspect-[4/5] max-w-sm overflow-hidden rounded-sm border border-line">
             <div className="absolute inset-0 bg-gradient-to-br from-graphite via-charcoal to-void" />
             <motion.img
-              src="/images/shubham-mali.jpg"
+              src="/images/shubham-mali-800.webp"
+              srcSet="/images/shubham-mali-480.webp 480w, /images/shubham-mali-800.webp 800w"
+              sizes="(min-width: 640px) 384px, calc(100vw - 48px)"
+              width={800}
+              height={1200}
+              loading="lazy"
+              decoding="async"
               alt={profile.name}
               initial={{ opacity: 0, scale: 1.08 }}
               whileInView={{ opacity: 1, scale: 1 }}
